@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Cartwright - Resume</title>
+    <style>
+        @page { size: letter }
+        @page { 
+            margin: 0mm;
+            margin-top: 0.5in;
+            padding: 0mm;
+        }
+        @page :first {
+            margin-top: 0mm;
+        }
+        @page { prince-pdf-print-scaling: none }
+        @page { prince-shrink-to-fit: none }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .container {
+            max-width: 8.5in;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #2c3e50;
+            font-weight: 300;
+        }
+        .contact-info {
+            margin: 5px 0;
+            font-size: 1.1em;
+            color: #666;
+        }
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .summary {
+            padding: 5px 20px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+        }
+        .section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 5px;
+            font-size: 1.35em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 7px;
+        }
+        .company {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #2c3e50;
+        }
+        .duration {
+            color: #666;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .position {
+            color: #666;
+            margin-bottom: 5px;
+            font-style: italic;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .job ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .job li {
+            margin-bottom: 8px;
+        }
+        .projects ul, .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        .projects li {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        .project-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .skills li {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 5px 12px;
+            margin: 3px;
+            border-radius: 15px;
+            font-size: 0.9em;
+        }
+        .education {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .degree {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.1em;
+        }
+        .university {
+            color: #666;
+            margin: 5px 0;
+        }
+        .honors {
+            margin-top: 10px;
+        }
+        .honors li {
+            color: #27ae60;
+            font-weight: 500;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+            .container {
+                padding: 20px;
+            }
+            .job-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Andrew Cartwright</h1>
+            <div class="contact-info">
+                Salt Lake City, UT •
+                <a href="mailto:drew.c.cartwright@gmail.com">drew.c.cartwright@gmail.com</a> •
+                (720) 755-3389 •
+                <a href="https://www.linkedin.com/in/andrew-cartwright-8b13b0134/" target="_blank">LinkedIn</a> •
+                <a href="https://andrewccartwright.github.io/" target="_blank">Portfolio</a>
+            </div>
+        </header>
+
+        <section class="summary">
+            <p>Backend engineer specializing in high-performance financial APIs at Addepar. Delivered measurable impact through Elasticsearch optimizations (5x export limit increase), API development ($25M ARR), and system performance improvements (40% faster response times).</p>
+        </section>
+
+        <section class="section">
+            <h2>Experience</h2>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <div class="company">Addepar</div>
+                            <div class="duration">Sept 2021 - Present</div>
+                        </div>
+
+                        <div class="position">
+                            <span>Software Engineer II</span>
+                            <span>Sept 2024 - Present</span>
+                        </div>
+
+                        <div class="position">
+                            <span>Software Engineer</span>
+                            <span>June 2023 - Sept 2024</span>
+                        </div>
+
+                        <ul>
+                            <li>Engineered a benchmark proxy system to automatically estimate security performance, eliminating manual return inputs and delivering more timely, accurate portfolio insights to end clients.</li>
+                            <li>Delivered mutual fund look-through functionality, enabling granular portfolio analysis and improving investment transparency across client accounts.</li>
+                            <li>Spearheaded the development of a new feature that enabled clients to automate complex ownership transfers, resulting in a significant time savings.</li>
+                            <li>Designed and implemented multiple APIs to enable efficient access to vital financial data, fulfilling a commitment to clients with a combined ARR of $25M.</li>
+                            <li>Enhanced performance of Elasticsearch-backed audit trail, resulting in a five-fold increase in the result export limit and a 40% decrease in response times.</li>
+                            <li>Constructed an asynchronous API to facilitate the export of large transaction datasets, allowing clients to efficiently access and analyze data.</li>
+                            <li>Introduced filtering parameters to pivotal APIs, leading to a 30% reduction in request times and delivering a highly customizable experience to address a diverse range of use cases.</li>
+                            <li>Collaborated seamlessly with non-engineering teams, synergizing efforts to deliver, evaluate, and iteratively enhance solutions to address multifaceted business challenges.</li>
+                        </ul>
+
+                        <br>
+                        <div class="position">
+                            <span>Technical Support Analyst</span>
+                            <span>May 2022 - June 2023</span>
+                        </div>
+                        <div class="position">
+                            <span>Client Support Analyst</span>
+                            <span>Sept 2021 - May 2022</span>
+                        </div>
+                        <ul>
+                            <li>Identified, raised, and assisted with critical incidents, providing timely and effective solutions to minimize impact on end-users and improve overall system stability for the company.</li>
+                            <li>Diagnosed and resolved client issues with APIs and integrations, escalating to the appropriate engineering team when necessary.</li>
+                        </ul>
+                    </div>
+
+                    <div class="job">
+                        <div class="job-header">
+                            <div class="company">Freelance Contract</div>
+                            <div class="duration">May 2024 - Sept 2025</div>
+                        </div>
+
+                        <div class="position">
+                            <span>Backend Developer</span>
+                            <span>Part-time</span>
+                        </div>
+
+                        <ul>
+                            <li>Inherited and stabilized a fragmented codebase, refactoring the backend architecture to production-ready quality as the sole backend engineer on the project.</li>
+                            <li>Drove database migration from Supabase to self-managed PostgreSQL, eliminating third-party infrastructure dependency and improving architectural control over a stabilized codebase.</li>
+                            <li>Implemented passkey authentication flows, delivering a modern, passwordless login experience in line with current security best practices.</li>
+                            <li>Architected secure payment infrastructure via Stripe API, engineering multiple payment flows to support both direct donations and competitive auction transactions.</li>
+                        </ul>
+            </div>
+        </section>
+
+        <section class="section skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Java (Spring Boot, Quarkus)</li>
+                <li>RESTful API Development</li>
+                <li>SQL (MySQL, PostgreSQL)</li>
+                <li>Database Design and Optimization</li>
+                <li>TypeScript (React, Node.js, Express)</li>
+                <li>Elasticsearch</li>
+                <li>Kubernetes</li>
+                <li>Docker</li>
+                <li>Unit and Integration Testing (JUnit, TestNG)</li>
+                <li>Github Actions</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Education</h2>
+            <div class="education">
+                <div class="degree">Bachelor of Science in Applied Mathematics</div>
+                <div class="university">Southern Utah University - Cedar City, UT</div>
+                <ul class="honors">
+                    <li>Graduated summa cum laude</li>
+                    <li>Minors in Finance, Computer Science</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
